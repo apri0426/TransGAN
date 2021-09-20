@@ -41,7 +41,7 @@ def main():
         np.random.seed(args.random_seed)
         random.seed(args.random_seed)
         torch.backends.cudnn.benchmark = False
-        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.deterministic = False
 
     if args.gpu is not None:
         warnings.warn('You have chosen a specific GPU. This will completely '

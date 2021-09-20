@@ -149,12 +149,12 @@ def parse_args():
     parser.add_argument(
         '--dataset',
         type=str,
-        default='cifar10',
+        default='routing',
         help='dataset type')
     parser.add_argument(
         '--data_path',
         type=str,
-        default='./data',
+        default='../Congestion_all',
         help='The path of data set')
     parser.add_argument('--init_type', type=str, default='normal',
                         choices=['normal', 'orth', 'xavier_uniform', 'false'],
