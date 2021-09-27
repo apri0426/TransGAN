@@ -45,8 +45,8 @@ class AlignedDataset(BaseDataset):
         # input_dict = { 'label': B_tensor_train, 'label_test': B_tensor, 'image': A_tensor}
         # sample['case_name'] = self.A_paths[index].strip((self.root+'/'))
 
-        return A_tensor, B_tensor
-
+        return in_imgs , GT
+        # A img  B target
     def __len__(self):
         return len(self.A_paths) #// self.opt.batchSize * self.opt.batchSize
 
